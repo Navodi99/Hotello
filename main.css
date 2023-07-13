@@ -58,3 +58,81 @@ header #booking h2{
     color: #ffffff;
     cursor: pointer;
 }
+/*Showcase*/
+#showcase{
+    /* min-height: 1000px; */
+    background: url('images/Untitled-design-1-1.webp') no-repeat 0 -200px ;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+#showcase h1{
+    
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase h2{
+    font-family: Chalkduster, fantasy;
+    font-size: 75px;
+    margin-bottom: 10px;
+    font-weight: 10px;
+    
+}
+.container{
+    padding-top: 60px;
+}
+/*Lists*/
+.lists {
+    margin-top: 100px;
+    overflow: hidden;
+    display: flex;
+    width: 80%;
+    background-color: #ffffff;
+    
+
+}
+ .list{
+    /* float: left; */
+    /* width: 30%; */
+    display: flex;
+    background-size: cover;
+    border-left: 1px solid gray;
+    
+}
+
+.form{
+    width:100% ;
+    
+}
+.items{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    
+    
+}
+
+.check-btn{
+    padding: 13px 25px;
+    background-color: #0F172B;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.check-btn:hover{
+    background-color: burlywood;
+    color: #ffffff;
+    cursor: pointer;
+}
+select{
+    
+    border: none;
+}
