@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 *{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -275,4 +275,65 @@ select{
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     margin: 0;
+}
+.icon-description {
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    width: 25%;
+    margin-right: 10px;
+    /* padding-top: 40px;
+    padding-bottom:40px ; */
+}
+.icon-image{
+    /* padding: 30px; */
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    /* border: 1px solid red; */
+    
+}
+.icon-image img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.icon-text p{
+    font-size: 16px;
+    /* border: 1px solid red; */
+    padding-left: 30px;
+   
+}
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #f5f5f5;
+    height: 200px;
+}
+.heading{
+    padding-left: 20px;
+
+}
+.heading >h3{
+    padding-bottom: 10px;
+}
+.image{
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    align-items: center;
+    padding: 80px;
+
+    
+}
+.image >h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    padding-left: 20px;
+}
+.image >p{
+    font-size: 125px;
+    color: burlywood;
+    font-family: 'Great Vibes', cursive;
 }
