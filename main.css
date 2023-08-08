@@ -200,14 +200,14 @@ select{
     color: gray;
 }
 /*Services*/
-.services{
+/* .services{
     /* display: flex;
     flex-direction: column; */
-}
+/* }
 .image-container{
     /* display: grid; */
     /* grid-gap: 10px; */
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     height: 570px;
     align-items: end;
@@ -223,15 +223,15 @@ select{
     height: 550px;
     transition: height 0.3s ease;
     background-color: #0F172B;
-    opacity: 0.5;
+    opacity: 0.5; */
     /* max-height: 400px; */
     /* flex-direction: row; */
-}
-.image-item:hover{
+/* } */
+/* .image-item:hover{
     
     height: 570px;
     
-}
+} */ 
 /* .image-item img{
     width: 323px;
     height: 550px;
@@ -239,7 +239,7 @@ select{
     
 
 /* } */
-.text-inner{
+/* .text-inner{
     
     background-color: red;
     width: 100%;
@@ -251,14 +251,14 @@ select{
 .text-inner:hover{
     
 }
-.text-overlay{
+.text-overlay{ */
     /* position: absolute; */
     /* top: 50%; */
     /* left: 50%; */
     /* transform: translate(-50%,-50%); */
-    color:#ffffff;
+    /* color:#ffffff; */
     /* text-align: center; */
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0.4;
@@ -271,6 +271,79 @@ select{
 .text-overlay:hover{
     display: none;
 }
+.text-overlay h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}  */
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    height: 570px;
+    align-items: end;
+    width: 100%;
+}
+.image-item{ 
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 25%;
+    background-size: cover;
+    height: 550px;
+    transition: height 0.4s ease;
+}
+.image1{
+    background:url('images/room.jpg') no-repeat;
+}
+.image2{
+    background:url('images/5fee5cb865ebe1d62fa317200e2986ae.jpg') no-repeat;
+}
+.image3{
+    background:url('images/fitness.jpg') no-repeat;
+}
+.image4{
+    background:url('images/meeting.jpg') no-repeat;
+}
+.image-item:hover{
+    height: 570px;  
+}
+.text-overlay{
+    color:#ffffff;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-inner {
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-inner>div{
+    width: 75%;
+    text-align: center;
+}
+.image-item:hover .text-overlay {
+    opacity: 0;
+}
+  
+.image-item:hover .text-inner {
+    opacity: 1;
+}
+
 .text-overlay h3{
     font-family: 'Lato', sans-serif;
     font-size: 25px;
@@ -337,3 +410,152 @@ select{
     color: burlywood;
     font-family: 'Great Vibes', cursive;
 }
+
+/* .room-images{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-container{
+    display: flex;} */
+    /* justify-content: center; */
+   /* align-items: center; */
+    /* min-height: 100vh; */ 
+    /* overflow: hidden; */
+/* } */
+/* button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  } */
+.image-background{
+    position:relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.image-1{
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    align-items: center;
+    padding: 70px;
+
+    
+}
+.text-img1{
+    /* border: 1px solid red; */
+    padding: 30px 0;
+    font-size: 13px;
+}
+/* .image-1{
+    border: 1px solid blue;
+} */
+.image-1 >h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.image-1 >p{
+    padding-left: 10px;
+    font-size: 80px;
+    color: burlywood;
+    font-family: 'Great Vibes', cursive;
+}
+  .text-block {
+    position: absolute;
+    top: 2256px;
+    left: 620px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    /* padding-left: 10px; */
+    padding-right: 20px;
+    height: 500px;
+    /* border: 1px solid red; */
+    
+  }
+  /* .book-now-btn-info{
+    padding-left: 10px;
+    margin: 9px 9px;
+    border: 1px  solid red;
+    
+  } */
+  .book-now-btn2{
+    color: white;
+    background-color: burlywood;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5%;
+  }
+  /* carousel */
+  .main-slideshow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .slideshow-container{
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid red; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .myslide{
+    
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+   
+    /* justify-content: center;  */
+  } 
+  .fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+   
+  }
+  @keyframes fade{
+    from{
+        opacity: 0.4;
+
+    }
+    to{
+        opacity: 1;
+    }
+  }
+  .profile{
+    width: 120px;
+    height: 120px;
+   
+    border-radius: 50%;
+    margin: 10px auto;
+   display: flex;
+   background-size: contain;
+   overflow: hidden;
+   align-items: center;
+   justify-content: center;
+  }
+ .profile >img{
+    /* width: 120px; */
+    height: 120px;
+ }
